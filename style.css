@@ -1,0 +1,176 @@
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-family: 'lato', sans-serif
+}
+ h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+   flex-direction: column;
+
+}
+
+
+
+header {
+    background-color: #f4a460;
+    padding: 0 1.5rem;
+    position: absolute;
+    z-index: 97;
+    width: 99%;
+    box-shadow: 0 1.5px 1.5px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline
+}
+
+Header a {
+    text-decoration: wavy;
+    color: inherit
+}
+
+#kingtut {
+    width: 50%;
+}    
+.column1of2 {
+    float: left;
+    width: 400px;
+    margin: 205 ;
+}
+
+.column2of2 {
+    float: left;
+    width: 400px;
+    margin: 205px;}    
+
+#menu {
+    font-size: 105%;
+    letter-spacing: 3px;
+    list-style-type: none
+}
+
+#menu>li {
+    margin-bottom: 2em
+}
+
+.active {
+    border-bottom: 2px solid #f4a460
+}
+
+nav {
+    position: absolute;
+    background-color: #f4a460;
+    width: 99%;
+    left: 0;
+    padding: 0 2rem;
+    box-shadow: 0 1.5px 1.5px #3a3a3a;
+    display: none;
+    top: 100%
+}
+
+#nav-toggle:checked~nav {
+    display: block
+}
+
+#nav-toggle {
+    display: none
+}
+
+.nav-toggle-label {
+    font-size: 1.5rem
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    margin-top: 124px }
+p {
+    text-align: center;
+    color: #070738;
+}
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../css/images/Egypt-Tombs-askaladdin.webp") no-repeat center center/cover;
+}
+#kingtut {
+     
+        height: 1500px;
+        width: 50%;
+        background: url("../css/images/Tutankhamun415.avif")  no-repeat center center/cover;
+
+}
+
+
+
+.container {
+    height: 500px;
+    width: 281px;
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem
+    }
+
+    #menu {
+        display: flex
+    }
+
+    #menu>li {
+        padding: 1rem
+    }
+
+    .nav-toggle-label {
+        display: none
+    }
+
+    #logo {
+        font-size: 290%;
+        line-height: 75px;
+        margin: 0 .5rem
+    }
+
+    main {
+        margin-top: 124px
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a
+    }
+}
+
